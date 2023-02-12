@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <!--A link to highscore page and timer div-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light mb-4">
+            <a class="navbar-brand" href="highscores.html">View Highscores</a>
+            <div class="navbar-collapse" id="navbarText"></div>
+            <div class="navbar-text" id='restartButton'>
+                Time: 75seconds
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Section for title and info with start button -->
+        <section id="start" class="quiz-section">
+            <h1>Coding Quiz Challenge</h1>
+            <p class="card-text">
+                Try to answer the following code-related question within the time limit.
+                <br>
+                Please keep in mind that each incorrect answer will penalize your score/time
+                <br>
+                by ten seconds!
+            </p>
+            <button class="btn btn-info btn-lg" id="start-button">Start Quiz</button>
+        </section>
+        <!--section for question and answers-list-->
+        <section class="hidden quizSection" id="quizQuestions">
+            <p id="timer">Time: <span id="time-remaining">0</span></p>
+            <h1 id="question">Question</h1>
+            <ul id="choices"></ul>
+        </section>
+        <section class="quizSection hidden" id="end">
+            <h1 id="endTitle">Quiz Completed</h1>
+            <p id="scoredText">Your Score = <span id="score">0</span></p>
+            <form action="" id="submitScore">
+
+                <label for="initials">Enter Initials: </label>
+                <input type="text" id="initials">
+                <button class="btn btn-success" type="submit">Submit</button>
+                <p id="errorMessage"></p>
+
+            </form>
+            <a href="index.html" class="back-button"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>Return to quiz</a>
+
+        </section>
+        <div>
+
+        <p id="correct" class="choice-status hidden"><i class="fas fa-check-circle" aria-hidden="true"></i>Correct!</p>
+        <p id="wrong" class="choice-status hidden"><i class="fas fa-times-circle" aria-hidden="true"></i>Wrong!</p>
+      </div>
+
+
+    </main>
+    <script src="./scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/34b9bc8a79.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
