@@ -14,4 +14,6 @@ The app is built using HTML, CSS, jS and bootstrap.
 
 ## Usage
 Open the link https://aitzazanwar.github.io/Quiz-App/ in the browser and start the quiz.
+
+## Screenshot
 ![Quiz App-screenshot](https://user-images.githubusercontent.com/25909368/222989835-162e0547-418b-4603-9b6e-43128e39a02b.png)
