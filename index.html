@@ -9,8 +9,10 @@
     <!--Links to external libraries-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!--local css-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    
     <title>Quiz App</title>
 </head>
 
@@ -39,19 +41,21 @@
             <button class="btn btn-info btn-lg" id="start-button">Start Quiz</button>
         </section>
         <!--section for question and answers-list-->
-        <section class="hidden quizSection" id="quizQuestions">
+        <section class="hidden quiz-section" id="quizQuestions">
             <p id="timer">Time: <span id="timeRemaining">0</span></p>
             <h1 id="question">Question</h1>
             <ul id="choices"></ul>
         </section>
+
+        <!--section displaying the score and form to submit-->
         <section class="quizSection hidden" id="end">
             <h1 id="endTitle">Quiz Completed</h1>
             <p id="scoredText">Your Score = <span id="score">0</span></p>
             <form action="" id="submitScore">
 
                 <label for="initials">Enter Initials: </label>
-                <input type="text" id="initials">
-                <button class="btn btn-success" type="submit">Submit</button>
+                <input type="text" id="initialsInput">
+                <button class="btn btn-success" type="submit" id = "submitScore">Submit</button>
                 <p id="errorMessage"></p>
 
             </form>
@@ -67,7 +71,9 @@
 
     </main>
     <!--Link to local script file-->
-    <script src="./scripts/index.js"></script>
+    
+    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/highscores.js"></script>
     <script src="https://kit.fontawesome.com/34b9bc8a79.js" crossorigin="anonymous"></script>
 </body>
 

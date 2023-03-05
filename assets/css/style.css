@@ -219,3 +219,11 @@ td:last-child  {
     width: 40%;
   }
 }
+button{
+  background-color: #008CBA;
+  color: aliceblue;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
