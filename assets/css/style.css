@@ -31,8 +31,7 @@ h1 {
 
 /*Clickable*/
 a {
-  color: #88115b;
-  text-decoration: none;
+
 
   transition: color 0.2s ease-in-out;
 }
@@ -40,7 +39,7 @@ a {
 a:hover, 
 a:focus, 
 a:active {
-  color: #88115b;
+  
 }
 
 button,
@@ -52,15 +51,7 @@ button,
 
 }
 
-.back-button:hover, 
-.back-button:focus, 
-.back-button:active,
-button:hover, 
-button:focus, 
-button:active{
-  background-color: #88115b;
-  color: white;
-}
+
 
 .btn-info {
   margin-left: 0;
